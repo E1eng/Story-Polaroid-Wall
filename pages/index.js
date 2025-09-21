@@ -87,6 +87,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
+    <Head>
+        <title>Community Polaroid Wall</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Toaster position="top-center" reverseOrder={false} toastOptions={{
         style: { background: '#333', color: 'white' },
       }}/>
