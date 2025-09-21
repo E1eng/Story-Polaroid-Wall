@@ -40,6 +40,12 @@ export default function Home() {
 
   async function handleCreate(e) {
     e.preventDefault()
+    if (!name.trim()) {
+      return toast.error('Please enter your name!')
+    }
+    if (!message.trim()) {
+      return toast.error('Please write one line about you!')
+    }
     if (!file) return toast.error('Select the file first!')
     setLoading(true)
     try {
@@ -129,13 +135,13 @@ export default function Home() {
               className="p-2 rounded flex-grow text-sm bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500"
               placeholder="Your name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)} required
             />
             <input
               className="p-2 rounded flex-grow text-sm bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500"
               placeholder="One line about you"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)} required
             />
             
             {/* Custom File Input */}
@@ -146,7 +152,7 @@ export default function Home() {
                   type="file"
                   accept="image/*"
                   className="hidden"
-                  onChange={handleFileChange}
+                  onChange={handleFileChange} required
                 />
               </label>
               <span className="p-2 bg-white/10 border-y border-r border-white/20 text-white text-xs rounded-r-lg truncate max-w-[120px]">
