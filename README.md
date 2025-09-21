@@ -1,4 +1,4 @@
-# Fogo Wall Clone (Next.js + Tailwind + Supabase)
+# Story Community Polaroid Wall (Next.js + Tailwind + Supabase)
 
 **What this is:** starter project that implements a shared polaroid wall. Users can upload a photo, name, and a short description — images are stored in Supabase Storage and metadata in a Supabase table. Frontend is Next.js + Tailwind.
 
