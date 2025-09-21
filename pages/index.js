@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import PolaroidCard from '../components/PolaroidCard'
 import { supabase } from '../lib/supabaseClient'
 import toast, { Toaster } from 'react-hot-toast'
+import Head from 'next/head'
 
 export default function Home() {
   const [polaroids, setPolaroids] = useState([])
