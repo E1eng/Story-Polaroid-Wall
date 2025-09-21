@@ -114,7 +114,7 @@ export default function Home() {
         <header className="flex items-center justify-between">
           <img src="/symbol.svg" alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12" />
           <h1 className="flex-1 text-center text-3xl sm:text-4xl font-extrabold font-lobster text-white">
-            Community Polaroid Wall
+           Story Community Polaroid Wall
           </h1>
           <div className="w-10 sm:w-12" />
         </header>
