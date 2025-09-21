@@ -5,7 +5,7 @@ export default function PolaroidCard({ item }) {
       className="group inline-block w-full mb-4 cursor-pointer [break-inside:avoid] transition-all duration-300 ease-out hover:!rotate-0 hover:scale-105 hover:z-50 transform -rotate-2"
     >
         <div 
-          className="relative w-[110px] h-[180px] p-2 overflow-hidden mx-auto 
+          className="relative w-[110px] h-[180px] p-1.5 overflow-hidden mx-auto 
                      bg-white outline outline-2 outline-stone-300
                      shadow-lg transition-shadow duration-300 ease-out
                      group-hover:shadow-2xl flex flex-col"
