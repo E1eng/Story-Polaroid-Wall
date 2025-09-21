@@ -24,7 +24,7 @@ export default function PolaroidCard({ item }) {
             <h2 className="font-semibold text-neutral-800 text-[15px] truncate font-sans">
               {item.name}
             </h2>
-            <p className="font-sans font-semibold text-neutral-600 text-[12px] leading-tight line-clamp-3">
+            <p className="font-sans font-semibold text-neutral-600 text-[13px] leading-tight line-clamp-3">
               {item.message}
             </p>
           </div>
